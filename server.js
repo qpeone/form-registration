@@ -28,15 +28,9 @@ app.post("/register", function(req, res) {
     password: password,
   };
 
-  connection.connect(function(err) {
-    if (err) throw err;
+  connection.query("INSERT INTO users SET ?", user);
 
-    connection.query("INSERT INTO users SET ?", user, function(err) {
-      if (err) throw err;
-
-      return res.redirect("success.html");
-    });
-  });
+  return res.redirect("success.html");
 });
 
 app
@@ -46,3 +40,4 @@ app
   .listen(3000);
 
 console.log("server listening at port 3000");
+

@@ -1,0 +1,76 @@
+#body {
+    background: linear-gradient(rgb(131, 48, 156), rgb(91, 216, 233));
+    width: 100%;
+  }
+
+#formulaire{
+    padding-top: 30px;
+}
+.contenaireForm{
+  display: flex;
+  margin-top: 230px;
+  margin-bottom: 110px;
+}
+#logo{
+    text-align: center;
+}
+
+.deuxiemeDiv{
+    height: 500px;
+    background-color: #3c1b7b;
+    text-align: center;
+    border-radius: 20px;
+}
+.divForm{
+    width: 33.3%;
+}
+.titre{
+    background-color: rgb(35 7 77);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    font-family:  sans-serif;
+}
+.input{
+    border-radius: 5px;
+    border-style: none;
+
+}
+.form{
+    width: 80%;
+    height: 30px;
+    margin-bottom: 15px; 
+}
+.checkboxUn{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    margin-left: 55px;
+}
+.checkboxDeux{
+    margin-bottom: 10px; 
+    display: flex;
+    margin-left: 55px;
+}
+.radio{
+    border-radius: 7px;
+}
+span{
+    color: white;
+    margin-left: 5px;
+}
+#soumettre{
+    margin-left: 400px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: yellowgreen;
+    height: 30px;
+    width: 110px;
+    color: white;
+    margin-top: 20px;
+}
+#logo{
+    color: white;
+    padding-top: 30px;
+}

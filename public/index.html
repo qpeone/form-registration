@@ -1,10 +1,82 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Form Registration</title>
-  </head>
-  <body>
-    <!-- Code Here -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Form Registration</title>
+</head>
+
+<body id='body'>
+  <div class="contenaireParent" id="linear-gradient">
+
+   
+    <div class="contenaireForm">
+      <div class="premiereDiv divForm"></div>
+      <div class="deuxiemeDiv divForm">
+        <div class="titre">FORMULAIRE D'ENREGISTREMENT</div>
+
+        <form action="/register" method="POST" class="form-test" id='formulaire'>
+
+          <div class="form-test">
+            <input class="input form" type="text" name="name" id="name" placeholder="Nom et Prénom" required>
+          </div>
+
+          <div class="form-test">
+            <input type="email" class="input form" name="email" id="email" placeholder="Email" required>
+          </div>
+
+          <div class="form-test">
+            <input type="tel" name="phone" class="input form" id="phone" minlength="6" maxlength="6" placeholder="N°Tel" required>
+          </div>
+
+          <div class="form-test">
+            <input type="password" placeholder="password" class="input form" name="password" id="password" required>
+          </div>
+
+          <div class="form-test">
+            <input type="password" placeholder="confirmationPassword" class="input form" id="confirmationPassword" required>
+          </div>
+          <div class="checkboxUn">
+            <input type="checkbox" class="input radio">
+            <span>Voulez-vous recevoir des mails sur nos offres?</span>
+          </div>
+          <div class="checkboxDeux">
+            <input type="checkbox" class="input radio">
+            <span>Acceptez-vous les conditions de cette application?</span>
+          </div>
+          <div class="form-test">
+            <input type="submit" value="Je m'enregistre" id="soumettre"> 
+          </div>
+      </div>
+      <div class="troisiemeDiv divForm" ></div>
+    </form>
+    </div>
+
+    <div id="logo">
+      <p>designed By AYLEDY</p>
+    </div>
+    
+  </div>
+
+
+ 
+  <script>
+    //script pour le password
+    document.getElementById('formulaire').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      var password = document.getElementById('password');
+      var confirmationPassword = document.getElementById('confirmationPassword');
+
+      if (password.value == confirmationPassword.value) {
+        event.target.submit();
+      } else {
+        alert('pas bon!!');
+      }
+    });
+  </script>
+
+</body>
+
 </html>
